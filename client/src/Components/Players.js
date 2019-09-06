@@ -7,7 +7,7 @@ const Players = ({ pName, pCountry, pSearches, pId }) => {
         <h2 className="header">{pName}</h2>
             <div className="card horizontal">
                     <div className="card-image">
-                        <img src="" />
+                        <img src="" alt="Womens world cup"/>
                     </div>
                     <div className="card-stacked dark-mode">
                     <div className="card-content dark-mode">
