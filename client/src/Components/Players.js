@@ -2,14 +2,14 @@ import React from 'react';
 
 const Players = ({ pName, pCountry, pSearches, pId }) => {
     return (
-        <div className="player-wrapper">     
-    <div className="col s12 m7">
-        <h2 className="header">{pName}</h2>
+    <div className="player-wrapper">     
+        <div className="col s12 m7">
+            <h2 className="header">{pName}</h2>
             <div className="card horizontal">
-                    <div className="card-image">
-                        <img src="" alt="Womens world cup"/>
-                    </div>
-                    <div className="card-stacked dark-mode">
+                <div className="card-image">
+                <img src="https://pbs.twimg.com/profile_images/1034069615020859392/kliVRSJJ_reasonably_small.jpg"/>
+                </div>
+                <div className="card-stacked dark-mode">
                     <div className="card-content dark-mode">
                         <p className="dark-mode">I am from {pCountry}</p>
                         <p className="dark-mode">Searches: {pSearches}</p>
@@ -17,10 +17,10 @@ const Players = ({ pName, pCountry, pSearches, pId }) => {
                     </div>
                     <div className="card-action">
                         <a href="#">This is a link</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
     </div>  
     )
 }

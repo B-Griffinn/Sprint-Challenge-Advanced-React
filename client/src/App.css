@@ -91,3 +91,8 @@ text-align: left;
     background-color: #1F2022;
     border: none;
   }
+
+  .player-wrapper {
+    margin-left: 30%;
+    width: 35%;
+  }
