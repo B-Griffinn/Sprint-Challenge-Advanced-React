@@ -1,26 +1,33 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import axios from 'axios';
 
-function App() {
+class App extends React.Component {
+// Constructor not needed bc there is no binidng
+// We just need state
+  state = {
+    players: []
+}; //end state
+
+
+  // Handlers 
+  componentDidMount() {
+    axios.get(`http://localhost:5000/api/players`)
+    .then(res => 
+      {console.log('Here is our res.data from the api ',res.data)
+      this.setState({ players: res.data })
+    })
+    .catch(err => {
+      console.log(err)
+    })
+  } // end cDM
+
+  render() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Hello From App</h1>
     </div>
-  );
+  )};
 }
 
 export default App;
