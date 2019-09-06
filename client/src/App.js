@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import axios from 'axios';
+import Players from './Components/Players';
 
 class App extends React.Component {
 // Constructor not needed bc there is no binidng
@@ -22,12 +23,24 @@ class App extends React.Component {
     })
   } // end cDM
 
-  render() {
+  // Render/Return
+render() {
   return (
     <div className="App">
-      <h1>Hello From App</h1>
+    {this.state.players.map(player => {
+      return (
+        <Players 
+        key={player.id}
+        pName={player.name}
+        pCountry={player.country}
+        pSearches={player.searches}
+        pId={player.id}
+        />
+      )
+    })}
     </div>
-  )};
+  )
+}
 }
 
 export default App;
