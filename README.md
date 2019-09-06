@@ -23,9 +23,23 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+Class components give us access to functionality that is stored in the base Component of React, which is why when we declare/define a *Class Component* in React we need to use 'class App *extends* React.Component'
+There are methods in this base Component that give us, developers, access to the Component Lifecycle.
+
+Another great aspect of Class Components is the ability to store state and pass that state down to other components. This is useful when pulling data from an API.
+
 - [ ] Name three lifecycle methods and their purposes.
+cDM - componentDidMount is great for getRequests. This is where/when our data will be loaded into our application.
+cDU - componentDidUpdate is a great place to reset our layout or state. This is useful for updating the DOM once props or state changes.
+cWU - componentWillUnmount should be last in your React Lifecycle setup. It is a great place to clean our app, maybe reset everything the user has done for the next user.
+
+
 - [ ] What is the purpose of a custom hook?
+Custom Hooks are great for developers who want to extract component logic into their reusable functions.
+
 - [ ] Why is it important to test our apps?
+Testing our applications is great for gaining confidence in our application, creates documentation for future developers and of course ensures that our app works correctly. 
+
 
 ## Project Set Up
 
