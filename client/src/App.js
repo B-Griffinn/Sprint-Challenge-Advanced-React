@@ -1,7 +1,9 @@
 import React from 'react';
 import './App.css';
+
 import axios from 'axios';
 import Players from './Components/Players';
+import NavBar from './Components/NavBar';
 
 class App extends React.Component {
 // Constructor not needed bc there is no binidng
@@ -27,6 +29,7 @@ class App extends React.Component {
 render() {
   return (
     <div className="App">
+      <NavBar />
     {this.state.players.map(player => {
       return (
         <Players 
