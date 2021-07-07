@@ -23,41 +23,55 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit the `ANSWERS.md` file to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+Class components give us access to functionality that is stored in the base Component of React, which is why when we declare/define a *Class Component* in React we need to use 'class App *extends* React.Component'
+There are methods in this base Component that give us, developers, access to the Component Lifecycle.
+
+Another great aspect of Class Components is the ability to store state and pass that state down to other components. This is useful when pulling data from an API.
+
 - [ ] Name three lifecycle methods and their purposes.
+cDM - componentDidMount is great for getRequests. This is where/when our data will be loaded into our application.
+cDU - componentDidUpdate is a great place to reset our layout or state. This is useful for updating the DOM once props or state changes.
+cWU - componentWillUnmount should be last in your React Lifecycle setup. It is a great place to clean our app, maybe reset everything the user has done for the next user.
+
+
 - [ ] What is the purpose of a custom hook?
+Custom Hooks are great for developers who want to extract component logic into their reusable functions.
+
 - [ ] Why is it important to test our apps?
+Testing our applications is great for gaining confidence in our application, creates documentation for future developers and of course ensures that our app works correctly. 
+
 
 ## Project Set Up
 
 Follow these steps to set up and work on your project:
 
-- [ ] Create a forked copy of this project.
-- [ ] Add TL as collaborator on Github.
-- [ ] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
-- [ ] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
-- [ ] Run `yarn` to download dependencies.
-- [ ] Run the server using `yarn start` or `node server.js`.
-- [ ] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
-- [ ] Still inside the `client` folder run `yarn start` to run the client application.
-- [ ] Implement the project on this Branch, **committing progress & changes often.**
-- [ ] Push commits: `git push origin <firstName-lastName>`.
+- [X] Create a forked copy of this project.
+- [X] Add TL as collaborator on Github.
+- [X] Clone your OWN version of Repo. **(Not Lambda's by mistake!)**
+- [X] Create a new Branch locally: `git checkout -b <firstName-lastName>`.
+- [X] Run `yarn` to download dependencies.
+- [X] Run the server using `yarn start` or `node server.js`.
+- [X] In a separate terminal cd into the `client` folder and run `yarn install` to download dependencies.
+- [X] Still inside the `client` folder run `yarn start` to run the client application.
+- [X] Implement the project on this Branch, **committing progress & changes often.**
+- [] Push commits: `git push origin <firstName-lastName>`.
 
 Follow these steps for completing your project:
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
-- [ ] Add your Project Manager as a Reviewer on the Pull-request.
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo).
+- [X] Add your Project Manager as a Reviewer on the Pull-request.
 - [ ] PM then will count the HW as done by merging the branch back into master.
 
 ## Minimum Viable Product
 
 Your finished project must include all of the following requirements:
 
-- [ ] Class component that fetches data from the server you now have running - the data can be fetched from `http://localhost:5000/api/players`
-- [ ] Display the player data you receive from the API
-- [ ] Build a custom hook and use it in your app - this can be a localStorage hook, a fetch hook, a dark mode hook, or any other hook you would like
-- [ ] Write integration tests for your React components
+- [X] Class component that fetches data from the server you now have running - the data can be fetched from `http://localhost:5000/api/players`
+- [X] Display the player data you receive from the API
+- [] Build a custom hook and use it in your app - this can be a localStorage hook, a fetch hook, a dark mode hook, or any other hook you would like
+- [X] Write integration tests for your React components
 
 ## Stretch Problems
 
-- [ ] Implement another custom hook
+- [ 1/2 ] Implement another custom hook
 - [ ] Use a graphing library to graph the data you received from the API
